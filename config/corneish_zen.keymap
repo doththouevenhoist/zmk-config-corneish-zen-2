@@ -2,19 +2,23 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29  // Left-hand keys
+#define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35  // Right-hand keys
+#define THUMBS 36 37 38 39 40 41  // Thumb keys
 
-#define QWERTY 0
-#define NUMSYM 1
-#define CONFIG 2
-#define SYSTEM 3
-#define GAMING 4
-#define LOCKED 5
+// #define QWERTY 0
+// #define NUMSYM 1
+// #define CONFIG 2
+// #define SYSTEM 3
+// #define GAMING 4
+// #define LOCKED 5
 
 / {
     chosen {
         zmk,matrix_transform = &default_transform;
 
-        //only relevant for 3x5 keyboards
+        //only relevant for 3x5 keyboards, otherwise leave commented
         //zmk,matrix_transform = &five_column_transform;
     };
 };
