@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29  // Left-hand keys
 #define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35  // Right-hand keys
@@ -94,9 +93,9 @@
             //                                           ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 
             bindings = <
-&none   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       &kp N6     &kp N7     &kp N8    &kp N9  &kp N0  &trans
-&trans  &kp LC(A)  &none      &none      &none      &kp GRAVE    &kp SQT    &kp EQUAL  &none     &none   &none   &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp BSLH     &kp MINUS  &kp LBKT   &kp RBKT  &trans  &trans  &trans
+&none   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       &kp N6     &kp N7     &kp N8    &kp N9             &kp N0  &trans
+&trans  &kp LC(A)  &none      &none      &none      &kp GRAVE    &kp SQT    &kp EQUAL  &none     &kp LS(LG(LEFT))   &none   &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp BSLH     &kp MINUS  &kp LBKT   &kp RBKT  &kp LS(LG(RIGHT))  &trans  &trans
                               &trans     &trans     &trans       &trans     &trans     &none
             >;
         };
